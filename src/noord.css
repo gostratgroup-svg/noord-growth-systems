@@ -2242,6 +2242,12 @@ a {
   gap: 28px;
 }
 
+.profession-copy {
+  max-width: 860px;
+  display: grid;
+  gap: 16px;
+}
+
 .profession-list {
   max-width: 860px;
   display: grid;
