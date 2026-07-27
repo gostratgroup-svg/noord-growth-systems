@@ -2738,6 +2738,7 @@ a {
 }
 
 .deliverables-panel {
+  position: relative;
   display: grid;
   gap: 26px;
   padding: var(--noord-panel-pad);
@@ -2748,9 +2749,50 @@ a {
   box-shadow: var(--noord-shadow);
 }
 
+.deliverables-panel__label {
+  position: absolute;
+  top: 0;
+  left: var(--noord-panel-pad);
+  max-width: calc(100% - (2 * var(--noord-panel-pad)));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px 18px;
+  border-radius: 0 0 24px 24px;
+  color: var(--noord-light-brown);
+  background: var(--noord-dark);
+  box-shadow: 0 12px 22px rgba(35, 34, 33, 0.18);
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  text-align: center;
+  z-index: 1;
+}
+
+.deliverables-panel__label::after {
+  content: "↓";
+  position: absolute;
+  left: 26px;
+  top: calc(100% + 5px);
+  color: var(--noord-orange);
+  filter: drop-shadow(1px 1px 0 rgba(244, 144, 53, 0.28));
+  font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1;
+  transform: rotate(2deg);
+}
+
+.deliverables-panel__label::before {
+  content: none;
+}
+
 .deliverables-panel__intro {
   display: grid;
   gap: 10px;
+  padding-top: 42px;
 }
 
 .deliverables-panel__intro h3 {
@@ -3123,6 +3165,21 @@ a {
   .growth-addons {
     width: min(100% - 20px, 1160px);
     margin-bottom: 56px;
+  }
+
+  .deliverables-panel__label {
+    left: 20px;
+    max-width: calc(100% - 40px);
+    padding: 12px 18px 16px;
+    font-size: 0.95rem;
+  }
+
+  .deliverables-panel__label::after {
+    left: 22px;
+  }
+
+  .deliverables-panel__intro {
+    padding-top: 76px;
   }
 
   .marketing-hero h2,
