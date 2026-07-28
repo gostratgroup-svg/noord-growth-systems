@@ -12,320 +12,53 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Noord Growth Systems</title>
-    <meta
-      name="description"
-      content="Noord Growth Systems helps businesses build better Marketing, Sales, Customer, and People systems for consistent, sustainable growth."
-    />
-    <link rel="stylesheet" href="./src/noord.css" />
+    <meta name="description" content="Noord Growth Systems contact page." />
+    <style>
+      :root {
+        --dark: #232221;
+        --grey: #575757;
+        --green: #3a8b54;
+        --paper: #f2ebdd;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        background: #ffffff;
+        color: var(--dark);
+        font-family: Poppins, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: var(--green);
+        font-size: clamp(1.5rem, 5vw, 2.6rem);
+        font-weight: 600;
+        line-height: 1.1;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.16em;
+      }
+    </style>
   </head>
   <body>
-    <main class="noord-site" id="top">
-      <header class="site-nav">
-        <a class="noord-logo" href="#top" aria-label="Noord Growth Systems home">
-          <img
-            src="./assets/Noord Main Logo_Ligh Orange.png"
-            alt="Noord Growth Systems"
-            onerror="this.style.display='none'; this.nextElementSibling.classList.add('noord-logo__fallback--visible')"
-          />
-          <span class="noord-logo__fallback">noord</span>
-        </a>
-        <div class="site-nav__actions">
-          <details class="systems-menu">
-            <summary>
-              <span>Our Systems</span>
-            </summary>
-            <div class="systems-menu__panel">
-              <div class="systems-menu__desktop-list">
-                <a href="/marketing-growth-systems">Marketing Growth Systems</a>
-                <a href="#sales-system">Sales Growth Systems</a>
-                <a href="#customer-system">Customer Growth Systems</a>
-                <a href="#people-system">People Growth Systems</a>
-              </div>
-              <details class="systems-menu__mobile-group">
-                <summary>Our Systems</summary>
-                <div>
-                  <a href="/marketing-growth-systems">Marketing Growth Systems</a>
-                  <a href="#sales-system">Sales Growth Systems</a>
-                  <a href="#customer-system">Customer Growth Systems</a>
-                  <a href="#people-system">People Growth Systems</a>
-                </div>
-              </details>
-            </div>
-          </details>
-        <a class="nav-cta" href="/build-my-system">
-          <span>Build My System</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-        </a>
-        </div>
-      </header>
-
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__copy">
-          <div class="announcement">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z" />
-            </svg>
-            <h1 id="hero-title">NO GUESSWORK. BUILD YOUR GROWTH SYSTEM.</h1>
-          </div>
-          <h2>Build a<br />business<br />that grows<br /><em>better.</em></h2>
-          <p>
-            Noord helps you identify what's preventing growth, then designs and implements practical Growth Systems that
-            align your marketing, sales, people and customers, creating lasting business momentum.
-          </p>
-          <div class="hero__actions">
-            <a class="button button--primary" href="/build-my-system">
-              <span>Build My System</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-            </a>
-            <a class="button button--secondary" href="#systems">See How We Work</a>
-          </div>
-        </div>
-
-        <div class="growth-scene growth-scene--image">
-          <img
-            src="./assets/Growth_System Illustration.png"
-            alt="Marketing, sales, people and customer system blocks orbiting your growth system"
-          />
-        </div>
-      </section>
-
-      <div class="stacked-sections">
-        <section class="problem-section" id="proof" aria-labelledby="problem-title">
-          <div class="problem-section__copy">
-            <div class="section-badge">
-              <span>Your business is one connected growth system</span>
-            </div>
-            <h2 id="problem-title"><span>Growth</span> doesn't come from one department</h2>
-            <div class="problem-section__text">
-              <p>
-                It's created when your marketing, sales, people and customer systems move in the same direction. If one
-                is lacking all departments feel the loss.
-              </p>
-            </div>
-            <div class="section-actions">
-              <a class="button button--primary" href="/build-my-system">
-                <span>Build My System</span>
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-              </a>
-              <a class="button button--secondary" href="#systems">Explore the system</a>
-            </div>
-          </div>
-          <div class="connected-visual connected-visual--image">
-            <img
-              src="./assets/Growth Stairs.png"
-              alt="Growth system steps from marketing to sales, people, customers and growth"
-            />
-          </div>
-        </section>
-
-        <p class="constraint-closing">The right solution starts with finding the right problem.</p>
-
-        <section class="constraint-section" aria-labelledby="constraint-title">
-          <div class="constraint-section__intro">
-            <div class="section-badge section-badge--orange">
-              <span>Find the constraint</span>
-            </div>
-            <h2 id="constraint-title">Every growing business has <span>one</span> thing holding it back.</h2>
-            <div class="constraint-section__copy">
-              <p>The challenge isn't knowing how to grow. It's knowing what is preventing growth in the first place.</p>
-            </div>
-          </div>
-          <div class="constraint-grid">
-            <article class="constraint-card">
-              <span class="constraint-icon" aria-label="Confused positioning icon">
-                <img src="./assets/Noord-Growth-Systems-Questionmark-transparent.png" alt="" />
-              </span>
-              <h3>Unclear Positioning</h3>
-              <p>Customers don't understand why they should choose you.</p>
-            </article>
-            <article class="constraint-card">
-              <span class="constraint-icon" aria-label="Declining sales graph icon">
-                <img src="./assets/Noord-Growth-Systems-Declining-Graph-transparent.png" alt="" />
-              </span>
-              <h3>Inefficient Sales</h3>
-              <p>Opportunities are lost through inconsistent sales processes and follow-up.</p>
-            </article>
-            <article class="constraint-card">
-              <span class="constraint-icon" aria-label="Operational friction sparks icon">
-                <img src="./assets/Noord-Growth-Systems-Friction-Graph-transparent.png" alt="" />
-              </span>
-              <h3>Operational Friction</h3>
-              <p>People, processes and technology aren't working together.</p>
-            </article>
-            <article class="constraint-card">
-              <span class="constraint-icon" aria-label="Unhappy customer icon">
-                <img src="./assets/Noord-Growth-Systems-Thumbs-Down-transparent.png" alt="" />
-              </span>
-              <h3>Customer Experience</h3>
-              <p>Inconsistent customer experiences limit retention, referrals and long-term growth.</p>
-            </article>
-          </div>
-          <div class="constraint-aftercopy">
-            <p>Most businesses don't need more activity, they need more clarity.</p>
-            <p>
-              That's why Noord starts by identifying the constraint before designing and implementing the Growth Systems
-              that remove it.
-            </p>
-          </div>
-          <div class="section-actions constraint-section__actions">
-            <a class="button button--primary" href="/build-my-system">
-              <span>Build My System</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-            </a>
-            <a class="button button--secondary" href="#systems">Explore the systems</a>
-          </div>
-        </section>
-      </div>
-
-      <section class="section momentum-section" aria-labelledby="momentum-title">
-        <div class="momentum-section__copy">
-          <span>How we help businesses move north.</span>
-          <h2 id="momentum-title">From constraint to <span>momentum.</span></h2>
-          <p>
-            Every business is different, but the path to sustainable growth follows the same principles. We identify
-            what's holding your business back, design the right Growth Systems, and help you implement them until they
-            create measurable results.
-          </p>
-        </div>
-        <div class="momentum-grid">
-          <article class="momentum-card">
-            <div class="system-card__index">01</div>
-            <h3>Discover</h3>
-            <p>Understand your business, goals and current Growth Systems.</p>
-          </article>
-          <article class="momentum-card">
-            <div class="system-card__index">02</div>
-            <h3>Diagnose</h3>
-            <p>Identify the constraint that's limiting growth.</p>
-          </article>
-          <article class="momentum-card">
-            <div class="system-card__index">03</div>
-            <h3>Design</h3>
-            <p>Build practical Growth Systems tailored to your business.</p>
-          </article>
-          <article class="momentum-card">
-            <div class="system-card__index">04</div>
-            <h3>Deliver</h3>
-            <p>Implement the solution with your team or ours.</p>
-          </article>
-          <article class="momentum-card">
-            <div class="system-card__index">05</div>
-            <h3>Improve</h3>
-            <p>Measure results, refine the systems and keep your business moving forward.</p>
-          </article>
-        </div>
-        <div class="section-actions momentum-section__actions">
-          <a class="button button--primary" href="/build-my-system">
-            <span>Build My System</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-          </a>
-          <a class="button button--secondary" href="#systems">Explore the systems</a>
-        </div>
-      </section>
-
-      <section class="section section--systems" id="systems" aria-labelledby="systems-title">
-        <div class="section-heading">
-          <span>The systems that drive growth</span>
-          <h2 id="systems-title">Every solution starts with the <span>right</span> Growth System.</h2>
-          <p>Noord doesn't sell disconnected services.</p>
-          <p>
-            We design and implement Growth Systems that solve the constraint preventing your business from growing.
-          </p>
-        </div>
-        <div class="system-grid">
-          <article class="system-card" id="marketing-system">
-            <div class="system-card__top">
-              <div class="system-card__box" aria-hidden="true">
-                <img src="./assets/Growth-System-Marketing-Box.svg" alt="" />
-              </div>
-              <h3>Marketing Growth System</h3>
-            </div>
-            <p>Generate consistent demand through positioning, messaging, content, SEO and campaigns.</p>
-            <strong>Typical outcomes</strong>
-            <ul><li>Better visibility</li><li>Better quality leads</li><li>Stronger authority</li></ul>
-          </article>
-          <article class="system-card" id="sales-system">
-            <div class="system-card__top">
-              <div class="system-card__box" aria-hidden="true">
-                <img src="./assets/Growth-System-Sales-Box.svg" alt="" />
-              </div>
-              <h3>Sales Growth System</h3>
-            </div>
-            <p>Build a repeatable sales process that captures, manages and converts opportunities.</p>
-            <strong>Typical outcomes</strong>
-            <ul><li>Higher conversion</li><li>Better follow-up</li><li>Clear sales visibility</li></ul>
-          </article>
-          <article class="system-card" id="customer-system">
-            <div class="system-card__top">
-              <div class="system-card__box" aria-hidden="true">
-                <img src="./assets/Growth-System-Customers-Box.svg" alt="" />
-              </div>
-              <h3>Customer Growth System</h3>
-            </div>
-            <p>Turn customers into loyal advocates through better experiences and retention.</p>
-            <strong>Typical outcomes</strong>
-            <ul><li>Better retention</li><li>More referrals</li><li>Higher lifetime value</li></ul>
-          </article>
-          <article class="system-card" id="people-system">
-            <div class="system-card__top">
-              <div class="system-card__box" aria-hidden="true">
-                <img src="./assets/Growth-System-People-Box.svg" alt="" />
-              </div>
-              <h3>People Growth System</h3>
-            </div>
-            <p>Align your team, processes and accountability around business growth.</p>
-            <strong>Typical outcomes</strong>
-            <ul><li>Clear ownership</li><li>Better execution</li><li>Consistent performance</li></ul>
-          </article>
-        </div>
-        <div class="section-actions systems-section__actions">
-          <a class="button button--primary" href="/build-my-system">
-            <span>Build My System</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-          </a>
-          <a class="button button--secondary" href="#contact">Talk to Noord</a>
-        </div>
-      </section>
-
-      <footer class="cta-band" id="contact" aria-labelledby="contact-title">
-        <a class="noord-logo noord-logo--light" href="#top" aria-label="Noord Growth Systems home">
-          <img
-            src="./assets/Noord Main Logo_Ligh Green.png"
-            alt="Noord Growth Systems"
-            onerror="this.style.display='none'; this.nextElementSibling.classList.add('noord-logo__fallback--visible')"
-          />
-          <span class="noord-logo__fallback">noord</span>
-        </a>
-        <div class="cta-band__content">
-          <h2 id="contact-title">Growth isn't luck.<br />It's <span>designed.</span></h2>
-          <p>Helping businesses build better Marketing, Sales, Customer, and People systems.</p>
-          <nav class="cta-band__pages" aria-label="Systems pages">
-            <div class="cta-band__page-column">
-              <span>Systems</span>
-              <a href="/marketing-growth-systems">Marketing Growth Systems</a>
-              <a href="/#sales-system">Sales Growth Systems</a>
-              <a href="/#customer-system">Customer Growth Systems</a>
-              <a href="/#people-system">People Growth Systems</a>
-            </div>
-            <div class="cta-band__page-column">
-              <span>Company</span>
-              <a href="/">About us</a>
-              <a href="/growth-system-specialists">Growth System Specialists</a>
-            </div>
-            <div class="cta-band__page-column">
-              <span>Legal</span>
-              <a href="/privacy-policy">Privacy Policy</a>
-              <a href="/#terms-of-service">Terms of Service</a>
-            </div>
-          </nav>
-        </div>
-        <p class="cta-band__meta">Noord Growth Systems | Copyright © 2026 Noord Growth Pty Ltd</p>
-        <a class="button button--primary button--green" href="/build-my-system">
-          <span>Build My System</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>
-        </a>
-      </footer>
+    <main>
+      <a href="mailto:info@noordgrowth.co.za">info@noordgrowth.co.za</a>
     </main>
   </body>
 </html>
