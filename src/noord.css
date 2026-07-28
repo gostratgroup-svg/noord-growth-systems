@@ -3600,6 +3600,10 @@ a {
   gap: 32px;
 }
 
+.stories-section--blocked {
+  width: min(760px, calc(100% - 32px));
+}
+
 .story-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
@@ -3626,6 +3630,10 @@ a {
     linear-gradient(135deg, rgba(253, 186, 118, 0.22), rgba(255, 250, 240, 0.96));
 }
 
+.story-card--blocked {
+  min-height: auto;
+}
+
 .story-card h3 {
   max-width: 720px;
   margin: 0;
@@ -3633,6 +3641,16 @@ a {
   font-size: clamp(1.8rem, 3.4vw, 3rem);
   font-weight: 800;
   line-height: 0.98;
+}
+
+.story-card--blocked h2 {
+  max-width: 720px;
+  margin: 0;
+  color: var(--noord-dark);
+  font-size: clamp(1.9rem, 3.6vw, 3.2rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
 }
 
 .story-card a {
