@@ -3699,3 +3699,226 @@ a {
     border-radius: 28px;
   }
 }
+/* Client platform access guide */
+.access-page {
+  background: #fff;
+}
+
+.access-hero {
+  padding: clamp(56px, 7vw, 96px) max(20px, calc((100vw - 1160px) / 2));
+  background: #f2f7ec;
+}
+
+.access-hero > * {
+  max-width: 850px;
+}
+
+.access-eyebrow,
+.access-toc > span,
+.access-platform__heading > span {
+  color: #2f7644;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.access-hero h1 {
+  margin: 20px 0 24px;
+  font-size: clamp(3rem, 6vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1.02;
+}
+
+.access-hero h1 span {
+  color: var(--noord-green);
+}
+
+.access-hero p,
+.access-content p,
+.access-content li {
+  color: var(--noord-grey);
+  font-size: var(--noord-subtext-size);
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.access-hero p {
+  max-width: 700px;
+  margin: 0;
+}
+
+.access-layout {
+  width: min(1160px, calc(100% - 40px));
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(36px, 6vw, 88px);
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 94px) 0 clamp(72px, 9vw, 120px);
+}
+
+.access-toc {
+  position: sticky;
+  top: 100px;
+  display: grid;
+  gap: 13px;
+  padding: 10px 0 20px;
+  border-top: 1px solid var(--noord-line);
+}
+
+.access-toc > span {
+  margin: 10px 0 5px;
+}
+
+.access-toc a {
+  color: var(--noord-grey);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.access-toc a:hover,
+.access-content a:hover {
+  color: var(--noord-orange);
+}
+
+.access-content {
+  min-width: 0;
+}
+
+.access-content section {
+  scroll-margin-top: 100px;
+}
+
+.access-content section + section {
+  margin-top: clamp(60px, 7vw, 96px);
+}
+
+.access-content h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+.access-content p {
+  margin: 18px 0 0;
+}
+
+.access-content a {
+  color: #2f7644;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.access-principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  margin-top: 28px;
+}
+
+.access-principles p {
+  margin: 0;
+  padding-top: 16px;
+  border-top: 2px solid var(--noord-green);
+}
+
+.access-principles strong {
+  display: block;
+  color: var(--noord-dark);
+  font-weight: 600;
+}
+
+.access-platform {
+  padding-top: 26px;
+  border-top: 1px solid var(--noord-line);
+}
+
+.access-platform__heading {
+  display: grid;
+  gap: 14px;
+}
+
+.access-content ol,
+.access-finish ul {
+  display: grid;
+  gap: 15px;
+  margin: 28px 0 0;
+  padding-left: 1.6em;
+}
+
+.access-content li {
+  padding-left: 5px;
+}
+
+.access-content li::marker {
+  color: var(--noord-green);
+  font-weight: 700;
+}
+
+.access-content strong {
+  color: var(--noord-dark);
+  font-weight: 600;
+}
+
+.access-code {
+  white-space: nowrap;
+}
+
+.access-content .access-note {
+  margin-top: 28px;
+  padding: 14px 0 14px 20px;
+  border-left: 3px solid var(--noord-orange);
+  color: var(--noord-grey);
+}
+
+.access-finish {
+  padding: clamp(28px, 4vw, 46px);
+  border-radius: var(--noord-radius);
+  background: var(--noord-light-green);
+}
+
+.access-finish h2 {
+  margin-top: 14px;
+}
+
+.access-finish ul {
+  gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .access-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .access-toc {
+    position: static;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+    margin-bottom: 48px;
+  }
+
+  .access-toc > span {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .access-hero {
+    padding: 48px 20px 56px;
+  }
+
+  .access-hero h1 {
+    font-size: clamp(2.6rem, 10vw, 3.5rem);
+  }
+
+  .access-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .access-finish {
+    padding: 26px 20px;
+  }
+}
